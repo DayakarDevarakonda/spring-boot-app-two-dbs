@@ -1,0 +1,19 @@
+spring:
+  name: "Spring Boot Application with Two DBS"
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/practice-db
+
+server:
+  port: 8181
